@@ -1,0 +1,8 @@
+{
+  "name": "4.qrapp",
+  "app_id": "cfe32ff2",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
