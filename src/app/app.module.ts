@@ -12,6 +12,10 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { HistorialProvider } from '../providers/historial/historial';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
+//mapas
+import { AgmCoreModule } from '@agm/core';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -22,7 +26,10 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyC_bd32QA5WkQct4Ah0iwEIzYI4KQqbbOo'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

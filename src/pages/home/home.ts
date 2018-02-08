@@ -26,7 +26,8 @@ export class HomePage {
     console.log("Escaneando");
 
     if (!this.platform.is('cordova')){
-      this.historialServices.agregarHistorial("http:www.google.com");
+      //this.historialServices.agregarHistorial("http://www.google.com");
+      this.historialServices.agregarHistorial("geo:9.976, -84.3654");
       return;
     }
 
